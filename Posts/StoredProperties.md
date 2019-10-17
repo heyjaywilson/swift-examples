@@ -1,4 +1,4 @@
-# Stored Properties
+# Stored Properties in Swift
 
 This post is going to define what a stored property is and how to use it.
 
