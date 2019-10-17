@@ -4,7 +4,7 @@ A repo to store all Swift Playgrounds and my blog posts about them.
 
 | Post Title | Published Date | Playground Link | Raw Post Link | Published Post Link(s) |
 | ---------- | -------------- | --------------- | ------------- | ------------------- |
-| Stored Properties in Swift | Future | [GitHub](https://github.com/maeganjwilson/swift-examples/tree/master/Playgrounds/StoredProperties.playground) | [GitHub](https://github.com/maeganjwilson/swift-examples/blob/master/Posts/StoredProperties.md) | Dev.to |
+| Stored Properties in Swift | Future | [GitHub](https://github.com/maeganjwilson/swift-examples/tree/master/Playgrounds/StoredProperties.playground) | [GitHub](https://github.com/maeganjwilson/swift-examples/blob/master/Posts/StoredProperties.md) | Dev.to, [Medium](https://medium.com/@maeganwilson_/stored-properties-in-swift-143267881604) |
 
 ---
 
