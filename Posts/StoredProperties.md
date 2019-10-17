@@ -2,7 +2,7 @@
 
 This post is going to define what a stored property is and how to use it.
 
-There is a Swift Playground with examples in this post. It is at [this link](link). Feel free to copy the files or clone the entire [repo](Github link), but the repo has more than just this post's sample code.
+There is a Swift Playground with examples in this post. It is at [this link](https://github.com/maeganjwilson/swift-examples/tree/master/Playgrounds/StoredProperties.playground). Feel free to copy the files or clone the entire [repo](https://github.com/maeganjwilson/swift-examples), but the repo has more than just this post's sample code.
 
 ## Topics covered in this post
 
@@ -92,3 +92,9 @@ dobby.type // cat
 ```
 
 This example does not produce an error because `Pet` is a class and is, therefore, a reference value.
+
+---
+
+If you enjoyed this post and want more, please consider subscribing to my [Patreon](https://www.patreon.com/maeganwilson_) and checking out my other posts!
+
+If you don't like having more subscriptions, consider buying me a coffee by clicking the image below! <a href="https://www.buymeacoffee.com/mwilsonapps" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
