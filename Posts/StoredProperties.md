@@ -4,6 +4,12 @@ This post is going to define what a stored property is and how to use it.
 
 There is a Swift Playground with the examples in this post. It can be found at [this link](link). Feel free to copy the files or clone the entire [repo](github link), but the repo will have more than just this post's sample code.
 
+## Topics covered in this post
+
+- What is a Stored Property
+- How to create a Stored Property
+- Changing Stored Properties
+
 # What is a Stored Property?
 
 According to the documentation:
@@ -24,7 +30,6 @@ struct Name {
     var firstName: String
     var lastName: String
 }
-
 ```
 In the example, there are 2 properties, `firstName` and `lastName`.
 
@@ -34,14 +39,17 @@ Now, to use the properties.
 var myName: Name = Name(firstName: "Maegan", lastName: "Wilson")
 
 myName.firstName // "Maegan"
-
 ```
 
 # Changing Stored Properties
 
 As long as the properties are variables and used on an instance that is not a constant, the values can be changed.
 
-If the properties were constants, then they could not be changed. If the instance of a **structure** is assigned to a constant, then the properties cannot be changed. If the instance of a **class** is assigned to a constant, then the properties can be changed. This
+If the properties were constants, then they could not be changed. If the instance of a **structure** is assigned to a constant, then the properties cannot be changed. If the instance of a **class** is assigned to a constant, then the properties can be changed. This difference is due to the value (structures) vs reference (classes) types. When a value type is declared as a constant, then so are all the properties. It does not matter if the properties were declared as variables or constants. When a reference type is declared as a constant, then the properties that are variables can be changed for that instance.
+
+*Reminder*
+- A structure is a **value type**. 
+- A class is a **reference type**. 
 
 ## Example of Changing Stored Properties in a Struct
 
@@ -63,3 +71,24 @@ dogsName.lastName = "Wil"
 
 ```
 The error should say `Cannot assign to property: 'dogsName' is a 'let' constant`. This error is because `dogsName` is declared as a constant.
+
+## Example of Changing Stored Properties in a Class
+
+```swift
+class Pet {
+    var name: Name
+    var type: String
+    
+    init(name: Name, type: String){
+        self.name = name
+        self.type = type
+    }
+}
+
+let dobby: Pet = Pet(name: Name(firstName: "Dobby", lastName: "Wilson"), type: "dog")
+dobby.type // dog
+dobby.type = "cat"
+dobby.type // cat
+```
+
+This example does not produce an error. This is because `Pet` is a class and is therefore a reference value.
