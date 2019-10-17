@@ -2,7 +2,7 @@
 
 This post is going to define what a stored property is and how to use it.
 
-There is a Swift Playground with the examples in this post. It can be found at [this link](link). Feel free to copy the files or clone the entire [repo](github link), but the repo will have more than just this post's sample code.
+There is a Swift Playground with examples in this post. It is at [this link](link). Feel free to copy the files or clone the entire [repo](Github link), but the repo has more than just this post's sample code.
 
 ## Topics covered in this post
 
@@ -16,11 +16,11 @@ According to the documentation:
 
 > A stored property is a constant or variable that is stored as part of an instance of a particular class or structure
 
-Basically, a value that is stored in a class or structure as a variable or constant is a stored property.
+A stored property is a value that is in a class or structure as a variable or constant.
 
 # How to create a Stored Property
 
-1. Creat a structure or class
+1. Create a structure or class
 2. Declare a variable or constant in the class
 
 ## Example of Stored Properties
@@ -45,7 +45,7 @@ myName.firstName // "Maegan"
 
 As long as the properties are variables and used on an instance that is not a constant, the values can be changed.
 
-If the properties were constants, then they could not be changed. If the instance of a **structure** is assigned to a constant, then the properties cannot be changed. If the instance of a **class** is assigned to a constant, then the properties can be changed. This difference is due to the value (structures) vs reference (classes) types. When a value type is declared as a constant, then so are all the properties. It does not matter if the properties were declared as variables or constants. When a reference type is declared as a constant, then the properties that are variables can be changed for that instance.
+If the properties were constants, then they could not be changed. If the instance of a **structure** is assigned to a constant, then the properties cannot be changed. If the instance of a **class** is assigned to a constant, then the properties can be changed. This difference is due to the value (structures) vs. reference (classes) types. When a value type is declared as a constant, then so are all the properties. It does not matter if the properties were declared as variables or constants. When a reference type is declared as a constant, then the properties that are variables can be changed for that instance.
 
 *Reminder*
 - A structure is a **value type**. 
@@ -53,7 +53,7 @@ If the properties were constants, then they could not be changed. If the instanc
 
 ## Example of Changing Stored Properties in a Struct
 
-Notice that `myName` was declared as a variable and the properties of `Name` are variables as well. Since everything is a variable, the properties of `myName` can still be changed.
+Notice that `myName` was declared as a variable, and the properties of `Name` are variables as well. Since everything is a variable, the properties of `myName` can still be changed.
 
 ```swift
 myName.firstName = "Meg"
@@ -91,4 +91,4 @@ dobby.type = "cat"
 dobby.type // cat
 ```
 
-This example does not produce an error. This is because `Pet` is a class and is therefore a reference value.
+This example does not produce an error because `Pet` is a class and is, therefore, a reference value.
