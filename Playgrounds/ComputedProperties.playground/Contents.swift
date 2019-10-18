@@ -1,25 +1,54 @@
 import Foundation
 
-struct Person {
-    var firstName: String
-    var lastName: String
-    var birthMonth: String
-    var birthDay: Int
-    var birthYear: String
+// First example of a computed property with only a getter
+struct Rectangle {
+    var width: Int
+    var height: Int
     
-    var fullName: String {
+    var area: Int{
         get {
-            return "\(firstName) \(lastName)"
+            return width*height
         }
-    }
-    
-    var birthdate: String {
-        return "\(birthMonth) \(birthDay), \(birthYear)"
     }
 }
 
-var maegan: Person = Person(firstName: "Maegan", lastName: "Wilson", birthMonth: "July", birthDay: 8, birthYear: "1993")
+var rect: Rectangle = Rectangle(width: 12, height: 5)
+rect.area
+rect.width = 15
+rect.area
 
-maegan.birthdate
-maegan.birthDay = 20
-maegan.birthdate
+// Example with a getter and a setter
+struct Square {
+    var width: Int
+    
+    var area: Int {
+        get {
+            return width * width
+        }
+        set(newArea) {
+            width = Int(sqrt(Double(newArea)))
+        }
+    }
+}
+
+var sqr: Square = Square(width: 12)
+sqr.area
+sqr.area = 25
+sqr.width
+
+struct Circle {
+    var radius: Double
+    // 1.
+    var area: Double {
+        get {
+            return Double.pi * radius
+        }
+        set(newArea) {
+            radius = newArea / Double.pi
+        }
+    }
+    // 2.
+    func getBiggerCirclesArea(times: Int) -> Double{
+        return radius * Double(times) * Double.pi
+    }
+}
