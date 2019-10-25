@@ -34,7 +34,7 @@ Here is an example of a function.
 // 1.
 func add(numA: Int, numB: Int) -> Int {
 		// 2.
-    let sum = numA + numB
+    let sum: Int = numA + numB
     // 3.
     return sum
 }
