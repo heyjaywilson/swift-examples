@@ -50,5 +50,8 @@ Here is an explanation for the example:
 
 Once a function is written, then it can be called else wehre in the code.
 
-To use `add()` above, it needs to be called and given two integer values.
+To use `add()` above, it needs to be called and given two integer values. Below, print is used to log the sum of 12 and 13.
 
+```swift
+print(add(numA: 12, numB: 13)) // 25
+```
