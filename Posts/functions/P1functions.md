@@ -1,16 +1,14 @@
 ---
-title: Functions in Swift
+title: Functions in Swift Part 1
 published: false
 description: This post is going to explain what a function is and how to use it.
 tags: swift
 canonical_url: https://blog.appsbymw.com/posts/functions-in-swift
 series: Swift Basics
 ---
-# Functions
+# Functions in Swift Part 1
 
-This post is going to explain what a function is and how to use it.
-
-There is a Swift Playground with examples in this post. It can be found at [this link](https://github.com/maeganjwilson/swift-examples/tree/master/Playgrounds/ComputedProperties.playground). Feel free to copy the files or clone the entire [repo](https://github.com/maeganjwilson/swift-examples), but the repo has more than just this post's sample code.
+This post is going to explain what a function is and how to use it. It is a basic look at the parts of a function. More detail will be given in other posts.
 
 ## Topics covered in this post
 - [What is a Function](#what-is-a-function)
@@ -22,9 +20,9 @@ According to the Swift documentation, “functions are self-contained chunks of 
 Usually a function is defined when the task needs to be repeated or used somewhere else.
 
 # How to define a function
-When defining a function, it needs to start with `func`. This tells the swift compiler that the next chunk of code is going to be a function. Then it needs a descriptive name followed by parentheses. Inside the parentheses, is where parameters go.
+When defining a function, it needs to start with `func`. This tells the swift compiler that the next chunk of code is going to be a function. Then it needs an argument name followed by parentheses. Inside the parentheses, is where parameters go.
 
-*Function parameters are not required for a function. Parameters are necessary when the task needs data not accessible by the function.*
+*Function parameters are not required for a function*. Parameters are necessary when the task needs data not accessible by the function. All parameters in a function must have a unique name. When using the parameters in the function, the parameter name is used to access the value it contains.
 
 After the parameters are defined, a return type needs to be set if the function is returning a value. Not all functions need to return a value, so this step is optional. If declaring a return value, then the function must have a return statement in it. If not, then the compiler will throw an error.
 
@@ -81,3 +79,9 @@ print(sub(numA: ans2, numB: ans1)) // Prints 1
 ```
 
 Above, the first line prints the answer from `sub(numA: 10, numB: 5)`. The next three lines then store two calls to `sub(numA:numB)` and prints the answer to the last one.
+
+---
+
+If you enjoyed this post and want more, please consider subscribing to my [Patreon](https://www.patreon.com/maeganwilson_) and checking out my other posts!
+
+If you don't like having more subscriptions, consider buying me a coffee by clicking the image below! <a href="https://www.buymeacoffee.com/appsbymw" target="_blank"><img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
