@@ -12,7 +12,7 @@ This post is going to explain what a function is and how to use it. It is a basi
 
 ## Topics covered in this post
 - [What is a Function](#what-is-a-function)
-- [How to define a Function](how-to-define-a-function)
+- [How to define a Function](#how-to-define-a-function)
 
 # What is a Function
 According to the Swift documentation, “functions are self-contained chunks of code that perform a specific task.”
