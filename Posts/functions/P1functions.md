@@ -4,7 +4,7 @@ published: false
 description: This post is going to explain what a function is and how to use it.
 tags: swift
 canonical_url: https://blog.appsbymw.com/posts/functions-in-swift
-series: Swift Basics
+series: Functions in Swift
 ---
 # Functions in Swift Part 1
 
